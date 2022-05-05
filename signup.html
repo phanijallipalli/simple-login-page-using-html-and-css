@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sign up page</title>
+    <script>
+        function signup() {
+            var username = document.getElementById('username').value
+            var pass = document.getElementById('password').value
+            var cpass = document.getElementById('cpassword').value
+            if (sessionStorage.getItem(username)) {
+                window.alert("username already exist")}
+                else{
+                if (pass === cpass) {
+                    sessionStorage.setItem(username, pass);
+                    return window.location.href = 'login.html'
+                }
+                else {
+                    window.alert("both passwords didn't match")
+                }}
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>signup page</h1>
+    <label for="username">User Name</label><br>
+    <input type="text" id="username" required><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" required><br>
+    <label for="cpassword">confirm Password</label><br>
+    <input type="password" id="cpassword" required><br><br>
+    <button onclick="signup()">submit</button>
+    <p>already have an account <a href="login.html">sign in</a></p>
+</body>
+
+</html>
