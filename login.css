@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    color: brown;
+    font-size: 40px;
+    margin-left: 30%;
+}
+.logincontent{
+    margin-left: 30%;
+    font-size: 30px;
+}
+.input{
+    border-radius: 25px;
+    height: 30px;
+    width: 400px;
+    color: rgb(8, 8, 7);
+    font-size: 20px;
+}
+.submit{
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: black;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+}
+.signup{
+    margin-left: 30%;
+    
+}
