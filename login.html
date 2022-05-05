@@ -3,6 +3,7 @@
 
 <head>
     <title>loginpage</title>
+    <link rel="stylesheet" href="login.css">
     <script>
         function login() {
             var user = document.getElementById("username").value
@@ -26,12 +27,14 @@
 </head>
 
 <body>
-    <h1>sign-in page</h1>
+    <h1 class="header">sign-in page</h1>
+    <div class = "logincontent">
         <label for="username">User Name</label><br>
-        <input type="text" id="username" required><br>
+        <input  class = "input" type="text" id="username" required><br>
         <label for="password">Password</label><br>
-        <input type="password" id="password" required><br><br>
-        <button onclick="login()">submit</button>
-    <p>don't have an account <a href="signup.html">sign up</a></p>
+        <input class = "input" type="password" id="password" required><br><br>
+        <button class = "submit" onclick="login()">submit</button>
+    </div>
+    <p class = "signup">don't have an account <a href="signup.html">sign up</a></p>
 
 </html>
